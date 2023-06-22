@@ -1,0 +1,19 @@
+{
+	"image": "ruby:3.2.2",
+	"workspaceFolder": "/home/workspace",
+    "mounts": [
+        {"type":"bind","source":".", "target":"/home/workspace"}
+	],
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"rebornix.Ruby",
+				"kaiwood.endwise",
+			],
+			"settings": {
+				// 基本的な言語機能のサポート
+				"ruby.useLanguageServer": true,
+			}
+		}
+	},
+}
