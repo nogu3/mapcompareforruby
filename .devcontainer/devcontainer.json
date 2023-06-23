@@ -1,6 +1,6 @@
 {
-	"image": "ruby:3.2.2",
-	"workspaceFolder": "/home/workspace",
+	"dockerFile": "../Dockerfile",
+	"workspaceFolder": "/home/workspace/src",
     "mounts": [
         {"type":"bind","source":".", "target":"/home/workspace"}
 	],
@@ -9,10 +9,19 @@
 			"extensions": [
 				"rebornix.Ruby",
 				"kaiwood.endwise",
+				"castwide.solargraph",
 			],
 			"settings": {
 				// 基本的な言語機能のサポート
 				"ruby.useLanguageServer": true,
+				"solargraph.useBundler": false,
+				"ruby.useBundler": true,
+				"ruby.format": "rubocop",
+				"ruby.lint": {
+					"rubocop": {
+						"useBundler": true
+					}
+				},
 			}
 		}
 	},
