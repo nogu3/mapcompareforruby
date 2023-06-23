@@ -14,7 +14,7 @@
 			"settings": {
 				// 基本的な言語機能のサポート
 				"ruby.useLanguageServer": true,
-				"solargraph.useBundler": false,
+				"solargraph.useBundler": true,
 				"ruby.useBundler": true,
 				"ruby.format": "rubocop",
 				"ruby.lint": {
