@@ -1,6 +1,6 @@
 {
 	"dockerFile": "../Dockerfile",
-	"workspaceFolder": "/home/workspace/src",
+	"workspaceFolder": "/home/workspace",
     "mounts": [
         {"type":"bind","source":".", "target":"/home/workspace"}
 	],
