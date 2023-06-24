@@ -18,13 +18,11 @@ class IndependentResearch
 
   def benchmark(title)
     test_array = @test_array_for_original.deep_dup
-    puts title
     Benchmark.benchmark(Benchmark::CAPTION, 7, Benchmark::FORMAT) do |x|
-      x.report('sq:') do
+      x.report(title) do
         yield(test_array)
       end
     end
-    puts ''
   end
 
   def test(&)
